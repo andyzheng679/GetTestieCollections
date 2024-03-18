@@ -19,4 +19,15 @@ public class HashSetTest {
         Assert.assertFalse(hashset.contains("Zheng"));
     }
 
+    @Test
+    public void hashSetTest2(){
+        Set<Integer> hashset = new HashSet<>();
+        hashset.add(1);
+        hashset.add(7);
+        hashset.remove(1);
+
+        Assert.assertTrue(hashset.contains(7));
+        Assert.assertFalse(hashset.contains(1));
+    }
+
 }
